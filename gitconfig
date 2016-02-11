@@ -1,0 +1,23 @@
+[alias]
+  aa = add --all
+  ai = add --all --intent-to-add
+  ap = add --patch
+  ca = commit --amend
+  ci = commit -v
+  co = checkout
+  fuckit = !git add --all && git reset --hard
+  graph = log --oneline --graph--all --decorate
+[color]
+  ui = auto
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+[fetch]
+  prune = true
+[merge]
+  ff = only
+[rebase]
+  autosquash = true
+[user]
+  email = euraldius@gmail.com
+  name = Avielle Wolfe
