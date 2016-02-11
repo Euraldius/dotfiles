@@ -16,6 +16,8 @@
   prune = true
 [merge]
   ff = only
+[push]
+  default = simple
 [rebase]
   autosquash = true
 [user]
