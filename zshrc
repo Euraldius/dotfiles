@@ -36,3 +36,5 @@ g() {
   fi
 }
 compdef g=git
+
+eval "$(rbenv init -)"
