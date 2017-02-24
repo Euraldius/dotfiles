@@ -55,6 +55,7 @@ nnoremap <leader>a :Ag! -i
 colorscheme Tomorrow-Night
 
 let g:syntastic_check_on_open=1
+let g:jsx_ext_required = 0
 
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
@@ -68,6 +69,7 @@ if executable('ag')
 endif
 
 set wildmode=list:longest,list:full
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules
 function! InsertTabWrapper()
   let col = col('.') - 1
   if !col || getline('.')[col - 1] !~ '\k'

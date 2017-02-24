@@ -1,5 +1,6 @@
 alias tns="tmux new-session -s"
 alias tat="tmux attach-session -t"
+alias b="bundle"
 
 autoload -U colors
 colors
