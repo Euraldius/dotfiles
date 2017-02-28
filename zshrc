@@ -1,6 +1,7 @@
 alias tns="tmux new-session -s"
 alias tat="tmux attach-session -t"
 alias b="bundle"
+alias be="bundle exec"
 
 autoload -U colors
 colors
@@ -42,3 +43,5 @@ g() {
 compdef g=git
 
 eval "$(rbenv init -)"
+# recommended by brew doctor
+export PATH="/usr/local/bin:$PATH"

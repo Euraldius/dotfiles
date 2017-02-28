@@ -5,13 +5,14 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'isRuslan/vim-es6'
 Plugin 'kien/ctrlp.vim'
+Plugin 'mxw/vim-jsx'
+Plugin 'pangloss/vim-javascript'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
-Plugin 'isRuslan/vim-es6'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 filetype on
