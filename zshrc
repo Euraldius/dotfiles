@@ -45,3 +45,4 @@ compdef g=git
 eval "$(rbenv init -)"
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
+. `brew --prefix`/etc/profile.d/z.sh
