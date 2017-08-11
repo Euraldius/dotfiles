@@ -19,9 +19,9 @@
 [merge]
   ff = only
 [push]
-  default = simple
+  default = current
 [rebase]
   autosquash = true
 [user]
-  email = euraldius@gmail.com
+  email = aviellewolfe@gmail.com
   name = Avielle Wolfe

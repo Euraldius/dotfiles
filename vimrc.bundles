@@ -4,9 +4,12 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'burnettk/vim-angular'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'elixir-lang/vim-elixir'
 Plugin 'isRuslan/vim-es6'
+Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
@@ -15,7 +18,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-fugitive'
-Plugin 'elixir-lang/vim-elixir'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 filetype on

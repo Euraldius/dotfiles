@@ -38,6 +38,8 @@ set tabstop=2
 set t_Co=256
 set textwidth=80
 
+nmap <leader>y :! printf % \| pbcopy<cr><cr>
+
 nnoremap <leader><leader> <c-^>
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
