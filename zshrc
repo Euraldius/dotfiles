@@ -44,6 +44,8 @@ g() {
 compdef g=git
 
 eval "$(rbenv init -)"
+source /usr/local/lib/python2.7/site-packages
+
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
 . `brew --prefix`/etc/profile.d/z.sh
