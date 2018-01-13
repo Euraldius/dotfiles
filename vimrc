@@ -56,6 +56,10 @@ nnoremap <leader>a :Ag! -i
 
 colorscheme Tomorrow-Night
 
+
+" add jbuilder syntax highlighting
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+
 let g:syntastic_check_on_open=1
 let g:jsx_ext_required = 0
 

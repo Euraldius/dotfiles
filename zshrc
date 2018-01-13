@@ -47,3 +47,7 @@ eval "$(rbenv init -)"
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
 . `brew --prefix`/etc/profile.d/z.sh
+
+# export for pipenv
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
