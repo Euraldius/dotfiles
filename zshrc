@@ -55,6 +55,11 @@ export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 source /usr/local/bin/virtualenvwrapper.sh
 
+# Export files so pipenv keeps working when my laptop has a primary language
+# that's not English
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
 . `brew --prefix`/etc/profile.d/z.sh
