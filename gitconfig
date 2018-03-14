@@ -25,3 +25,5 @@
 [user]
   email = aviellewolfe@gmail.com
   name = Avielle Wolfe
+[credential]
+	helper = osxkeychain
