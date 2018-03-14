@@ -7,7 +7,7 @@
   ci = commit -v
   co = checkout
   fuckit = !git add --all && git reset --hard
-  graph = log --oneline --graph--all --decorate
+  graph = log --oneline --graph --all --decorate
   wip = !git add --all && git commit -m wip
 [color]
   ui = auto
