@@ -2,6 +2,9 @@ alias tns="tmux new-session -s"
 alias tat="tmux attach-session -t"
 alias b="bundle"
 alias be="bundle exec"
+alias prpm="pipenv run python manage.py"
+alias woman="man"
+alias fucking="sudo"
 
 autoload -U colors
 colors
