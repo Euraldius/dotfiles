@@ -35,6 +35,7 @@ set softtabstop=2
 set splitbelow
 set splitright
 set tabstop=2
+set tags=./tags
 set t_Co=256
 set textwidth=80
 
