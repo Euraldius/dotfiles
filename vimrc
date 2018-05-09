@@ -35,6 +35,7 @@ set softtabstop=2
 set splitbelow
 set splitright
 set tabstop=2
+set tags=./tags
 set t_Co=256
 set textwidth=80
 
@@ -53,10 +54,15 @@ nnoremap <leader>ek :Hexplore!<cr>
 nnoremap <leader>el :Vexplore!<cr>
 nnoremap <leader>= <C-w>=
 nnoremap <leader>a :Ag! -i
+map \ :NERDTreeToggle<CR>
 
 colorscheme Tomorrow-Night
 
 let g:syntastic_check_on_open=1
+let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_ruby_checkers = ["rubocop"]
+let g:syntastic_python_checkers = ["flake8"]
+let g:syntastic_typescript_checkers = ["eslint"]
 let g:jsx_ext_required = 0
 
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")

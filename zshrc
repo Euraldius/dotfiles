@@ -2,6 +2,9 @@ alias tns="tmux new-session -s"
 alias tat="tmux attach-session -t"
 alias b="bundle"
 alias be="bundle exec"
+alias prpm="pipenv run python manage.py"
+alias woman="man"
+alias fucking="sudo"
 
 autoload -U colors
 colors
@@ -47,10 +50,15 @@ eval "$(rbenv init -)"
 
 export WORKON_HOME=$HOME/code/.virtualenvs
 export PROJECT_HOME=$HOME/code
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 source /usr/local/bin/virtualenvwrapper.sh
+
+# Export files so pipenv keeps working when my laptop has a primary language
+# that's not English
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
