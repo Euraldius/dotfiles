@@ -55,3 +55,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
 . `brew --prefix`/etc/profile.d/z.sh
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
