@@ -58,12 +58,7 @@ map \ :NERDTreeToggle<CR>
 
 colorscheme Tomorrow-Night
 
-let g:syntastic_check_on_open=1
-let g:syntastic_javascript_checkers = ["eslint"]
-let g:syntastic_ruby_checkers = ["rubocop"]
-let g:syntastic_python_checkers = ["flake8"]
-let g:syntastic_typescript_checkers = ["eslint"]
-let g:jsx_ext_required = 0
+let g:graphql_javascript_tags = ['gql', 'graphql', 'Relay.QL']
 
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
