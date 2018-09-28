@@ -37,7 +37,6 @@ set splitright
 set tabstop=2
 set tags=./tags
 set t_Co=256
-set textwidth=80
 
 nmap <leader>y :! printf % \| pbcopy<cr><cr>
 
@@ -70,6 +69,10 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   let g:ctrlp_use_caching = 0
 endif
+
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_linters = {'python': ['flake8']}
 
 set wildmode=list:longest,list:full
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules

@@ -28,3 +28,5 @@
   name = Avielle Wolfe
 [credential]
 	helper = osxkeychain
+[pull]
+	default = current
