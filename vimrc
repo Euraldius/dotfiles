@@ -71,7 +71,7 @@ if executable('ag')
 endif
 
 set wildmode=list:longest,list:full
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 function! InsertTabWrapper()
   let col = col('.') - 1
   if !col || getline('.')[col - 1] !~ '\k'
