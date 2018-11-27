@@ -45,3 +45,14 @@ compdef g=git
 
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
+
+# setup rbenv
+eval "$(rbenv init -)"
+
+# require virtualenv for installing python packages
+export PIP_REQUIRE_VIRTUALENV=true
+
+# set AWS creds
+. ~/dev/bermuda/env/bin/activate
+eval $(awsenv --profile=${AWS_DEFAULT_PROFILE:-"default"})
+deactivate
