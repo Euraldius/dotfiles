@@ -20,6 +20,7 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tweekmonster/django-plus.vim'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 filetype on
