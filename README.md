@@ -1,3 +1,10 @@
+# Assumptions
+
+* System: Mac OS
+* Shell: zsh
+* Text editor: vim
+* Vim package manager: Vundle
+
 # Setup for Mac OS
 
 ## 1. Set your shell to zsh
@@ -21,3 +28,7 @@ ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/vimrc.bundles ~/.vimrc.bundles
 ln -s ~/dotfiles/zshrc ~/.zshrc
 ```
+
+# Vim setup
+
+Install Vundle. Follow its [instructions for setup](https://github.com/VundleVim/Vundle.vim#quick-start). Use `:PluginInstall` to install packages.
