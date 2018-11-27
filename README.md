@@ -8,7 +8,9 @@ chsh -s `which zsh`
 
 ## 2. Clone this repo in your user root
 
-`git clone git@github.com:Euraldius/dotfiles.git ~`
+```zsh
+git clone git@github.com:Euraldius/dotfiles.git ~
+```
 
 ## 3. Create symlinks
 
