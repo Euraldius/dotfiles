@@ -59,6 +59,10 @@ colorscheme Tomorrow-Night
 let g:syntastic_check_on_open=1
 let g:jsx_ext_required = 0
 
+" ALE config
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_linters = { 'javascript': ['eslint'] }
+
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
