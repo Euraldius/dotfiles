@@ -56,3 +56,7 @@ export PIP_REQUIRE_VIRTUALENV=true
 . ~/dev/bermuda/env/bin/activate
 eval $(awsenv --profile=${AWS_DEFAULT_PROFILE:-"default"})
 deactivate
+
+# use 2U's Vault http://vaultproject.io/
+export VAULT_ADDR=https://vault.prod.2u.com:8200/
+export VAULT_CACERT=$HOME/.certs/vault-ca.pem
