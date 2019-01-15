@@ -17,7 +17,7 @@ SAVEHIST=4096
 
 bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
-bindkey -s '^L' 'clear; echo "Trans women are beautiful <3"\n'
+bindkey -s '^L' 'clear; echo "Trans women are badass <3"\n'
 
 setopt extendedglob
 unsetopt nomatch
