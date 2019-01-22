@@ -51,3 +51,4 @@ export PATH="/usr/local/bin:$PATH"
 # export for pipenv
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
