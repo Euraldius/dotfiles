@@ -2,6 +2,7 @@ alias tns="tmux new-session -s"
 alias tat="tmux attach-session -t"
 alias b="bundle"
 alias be="bundle exec"
+alias localip="ipconfig getifaddr en0"
 
 autoload -U colors
 colors
