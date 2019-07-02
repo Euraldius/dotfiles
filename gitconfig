@@ -25,3 +25,8 @@
 [user]
   email = awolfe@gitlab.com
   name = Avielle Wolfe
+  signingkey = 17174DD092B40154
+[commit]
+  gpgsign = true
+[gpg]
+  program = gpg

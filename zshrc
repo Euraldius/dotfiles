@@ -65,3 +65,6 @@ export NVM_DIR="$HOME/.nvm"
 # paths for gitlab GDK
 export PATH="/usr/local/opt/postgresql@10/bin:/usr/local/opt/node@12/bin:$PATH"
 export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+# env var for GPG
+export GPG_TTY=$(tty)
