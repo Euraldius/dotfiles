@@ -55,3 +55,12 @@ eval "$(rbenv init -)"
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
 . `brew --prefix`/etc/profile.d/z.sh
+
+# env vars for nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# paths for gitlab GDK
+export PATH="/usr/local/opt/postgresql@10/bin:/usr/local/opt/node@12/bin:$PATH"
+export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"

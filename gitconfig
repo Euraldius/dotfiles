@@ -23,5 +23,5 @@
 [rebase]
   autosquash = true
 [user]
-  email = aviellewolfe@gmail.com
+  email = awolfe@gitlab.com
   name = Avielle Wolfe
