@@ -9,6 +9,7 @@
   fuckit = !git add --all && git reset --hard
   graph = log --oneline --graph--all --decorate
   wip = !git add --all && git commit -m wip
+  s = status
 [color]
   ui = auto
 [core]

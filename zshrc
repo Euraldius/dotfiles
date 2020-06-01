@@ -2,6 +2,7 @@ alias tns="tmux new-session -s"
 alias tat="tmux attach-session -t"
 alias b="bundle"
 alias be="bundle exec"
+alias g="git"
 alias localip="ipconfig getifaddr en0"
 
 autoload -U colors
@@ -18,7 +19,7 @@ SAVEHIST=4096
 
 bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
-bindkey -s '^L' 'clear; echo "Trans women are beautiful <3"\n'
+bindkey -s '^L' 'clear; echo "Trans women are badass <3"\n'
 
 setopt extendedglob
 unsetopt nomatch
@@ -35,23 +36,7 @@ git_prompt_info() {
 setopt promptsubst
 export PS1='${SSH_CONNNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) %# '
 
-g() {
-  if [[ $# > 0 ]]; then
-    git $@
-  else
-    git status
-  fi
-}
-compdef g=git
-
 eval "$(rbenv init -)"
-
-# export WORKON_HOME=$HOME/code/.virtualenvs
-# export PROJECT_HOME=$HOME/code
-# export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
-# export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-# source /usr/local/bin/virtualenvwrapper.sh
 
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
@@ -68,3 +53,17 @@ export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # env var for GPG
 export GPG_TTY=$(tty)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/awolfe/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/awolfe/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/awolfe/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/awolfe/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# add gcloud utils to shell for kubectl
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+
+# icu4c paths for GDK
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
