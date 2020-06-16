@@ -4,6 +4,7 @@ alias b="bundle"
 alias be="bundle exec"
 alias g="git"
 alias localip="ipconfig getifaddr en0"
+alias python="python3"
 
 autoload -U colors
 colors

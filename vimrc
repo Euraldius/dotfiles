@@ -56,8 +56,9 @@ nnoremap <leader>a :Ag! -i
 
 colorscheme Tomorrow-Night
 
-let g:syntastic_check_on_open=1
 let g:jsx_ext_required = 0
+let g:ale_python_flake8_executable = 'python3'   " or 'python' for Python 2
+let g:ale_python_flake8_options = '-m flake8'
 
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
