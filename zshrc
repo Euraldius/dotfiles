@@ -4,7 +4,6 @@ alias b="bundle"
 alias be="bundle exec"
 alias g="git"
 alias localip="ipconfig getifaddr en0"
-alias python="python3"
 
 autoload -U colors
 colors
@@ -49,7 +48,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # paths for gitlab GDK
-export PATH="/usr/local/opt/postgresql@10/bin:/usr/local/opt/node@12/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
 export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # env var for GPG
